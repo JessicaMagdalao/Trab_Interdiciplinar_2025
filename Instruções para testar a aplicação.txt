@@ -1,0 +1,14 @@
+Ao realizar o download do projeto, abra o projeto no vscode, abra um terminal no e rode os seguintes comandos:
+"cd backend"   -- para entrar na pasta backend.
+"npm install"  -- o comando npm install vai realizar o download de todos os dependentes do projeto através das informações inseridas no package.json.
+
+Em um novo terminal repete o mesmo para o frontend:"
+"cd frontend"
+"npm install"
+
+OBS: Caso retorne erro ao realizar o procedimento de npm install para baixar as dependências como Node.JS, execute o comando:
+"npm install --force"  -- com isto vai forçar a instalação das dependências a força.
+
+Para startar o projeto:
+No terminal do backend execute o comando "npm run dev".
+No terminal do frontend, execute o comando "npm run dev".
