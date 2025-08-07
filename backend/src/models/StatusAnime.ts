@@ -1,7 +1,4 @@
-/**
- * Enumeração que define os possíveis status de um anime.
- * Garante type safety e valores consistentes no sistema.
- */
+
 export enum StatusAnime {
     FINISHED = "FINISHED",
     RELEASING = "RELEASING",
@@ -34,7 +31,6 @@ export function parseStatusAnime(status: string | null | undefined): StatusAnime
         case StatusAnime.HIATUS:
             return StatusAnime.HIATUS;
         default:
-            // Retorna um padrão seguro para evitar valores inválidos
             return StatusAnime.FINISHED;
     }
 }

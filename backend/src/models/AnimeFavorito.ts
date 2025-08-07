@@ -3,8 +3,6 @@ import { ISerializavel } from '../interfaces/ISerializavel';
 
 /**
  * Classe que representa o relacionamento entre usuários e animes favoritos.
- * Implementa um padrão de associação qualificada, permitindo que usuários
- * mantenham listas personalizadas de animes favoritos com dados adicionais.
  */
 export class AnimeFavorito implements ISerializavel {
   private animeId: number;

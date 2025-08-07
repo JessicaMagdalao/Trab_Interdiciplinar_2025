@@ -1,8 +1,5 @@
 /**
  * Classe abstrata que serve como base para diferentes tipos de mídia.
- * Implementa o princípio da responsabilidade única (SRP) ao encapsular
- * apenas os atributos e comportamentos comuns a todas as mídias.
- * Demonstra o uso de herança e métodos abstratos.
  */
 export abstract class Midia {
     protected id: number;
@@ -13,10 +10,10 @@ export abstract class Midia {
 
   /**
    * Construtor da classe Midia.
-   * @param id Identificador único da mídia
-   * @param titulo Título da mídia
-   * @param imagem URL da imagem de capa
-   * @param sinopse Descrição ou sinopse da mídia
+    @param id 
+    @param titulo
+    @param imagem 
+    @param sinopse 
    */
   constructor(id: number, titulo: string, imagem: string, sinopse: string) {
     if (id <= 0) {
@@ -86,16 +83,13 @@ export abstract class Midia {
   }
 
   /**
-   * Método abstrato que deve ser implementado pelas classes filhas
-   * para retornar detalhes específicos da mídia.
-   * @returns Detalhes formatados da mídia
+   * @returns
    */
   public abstract getDetalhes(): string;
 
   /**
-   * Método abstrato que deve ser implementado pelas classes filhas
-   * para validar dados específicos do tipo de mídia.
-   * @returns true se a mídia é válida, false caso contrário
+
+   * @returns
    */
   public abstract validar(): boolean;
 }

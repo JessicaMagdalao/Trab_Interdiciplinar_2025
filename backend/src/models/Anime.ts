@@ -7,13 +7,9 @@ import { ISerializavel } from '../interfaces/ISerializavel';
 
 /**
  * Classe que representa um anime no sistema.
- * Herda de Midia e implementa múltiplas interfaces, demonstrando
- * polimorfismo e os princípios SOLID.
- * 
  * Relacionamentos:
  * - Herança: Anime herda de Midia
  * - Implementação: Implementa IPesquisavel, IValidavel, ISerializavel
- * - Associação: Possui lista de Genero (1:N)
  */
 export class Anime extends Midia implements IPesquisavel, IValidavel, ISerializavel {
   private generos: Genero[];
